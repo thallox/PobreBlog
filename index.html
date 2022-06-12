@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - PobreBlog</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- AOS library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- header -->
+      <header class="header">
+        <div class="header-text">
+          <h1>PobreBlog</h1>
+          <h4>Lugar de pobre</h4>
+        </div>
+        <div class="overlay"></div>
+      </header>
+
+      <!-- sidebar -->
+      <div class="sidebar">
+        <span class="closeButton">&times;</span>
+        <p class="brand-title"><a href="">PobreBlog</a></p>
+
+        <div class="side-links">
+          <ul>
+            <li><a class="active" href="index.html">Pagina Inicial</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="about.html">Sobre</a></li>
+          </ul>
+        </div>
+
+        <!-- sidebar footer -->
+        <footer class="sidebar-footer">
+          <div>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+          </div>
+
+          <small>Feito em 2022 e sem registros e totalmente pirateado PobreBlog</small>
+        </footer>
+      </div>
+      <!-- Menu Button -->
+      <div class="menuButton">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <!-- main -->
+      <main class="container">
+        <h2 class="header-title">Mais recentes postagens</h2>
+        <section class="cards-blog latest-blog">
+          <div class="card-blog-content">
+            <img src="images/pic1.jpg" alt="" />
+            <p>
+              11/06/2022
+              <span style="float: right">Escrito por um pobre</span>
+            </p>
+            <h4 style="font-weight: bolder">
+              <a href="single-blog.html"
+                >Importância da segurança da informação</a
+              >
+            </h4>
+          </div>
+
+          <div class="card-blog-content" data-aos="fade-left">
+            <img src="images/privacidade.jpg" alt="" />
+            <p>
+              12/06/2022
+              <span style="float: right">Escrito pelo pobre Wezer</span>
+            </p>
+            <h4 style="font-weight: bolder">
+              <a href="privacidade.html"
+                >Porque deve-se preservar a sua Privacidade</a
+              >
+            </h4>
+          </div>
+
+          <div class="card-blog-content" data-aos="fade-up">
+            <img src="images/software.jpeg" alt="" />
+            <p>
+              12/06/2022
+              <span style="float: right">Escrito pelo Maior Pobre</span>
+            </p>
+            <h4 style="font-weight: bolder">
+              <a href="software.html"
+                >Oque são propriedades de um software</a
+              >
+            </h4>
+          </div>
+
+          <div class="card-blog-content" data-aos="fade-left">
+            <img src="images/pic4.jpg" alt="" />
+            <p>
+              11/06/2022
+              <span style="float: right">Pobre</span>
+            </p>
+            <h4 style="font-weight: bolder">
+              <a href="single-blog.html">Regulações na internet</a>
+            </h4>
+          </div>
+        </section>
+      </main>
+
+      <!-- Main footer -->
+      <footer class="main-footer">
+        <div>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+        <small>PobreBlog 100% pirateado</small>
+      </footer>
+    </div>
+
+   <!-- Click events to menu and close buttons using javaascript-->
+    <script>
+      document
+        .querySelector(".menuButton")
+        .addEventListener("click", function () {
+          document.querySelector(".sidebar").style.width = "100%";
+          document.querySelector(".sidebar").style.zIndex = "5";
+        });
+
+      document
+        .querySelector(".closeButton")
+        .addEventListener("click", function () {
+          document.querySelector(".sidebar").style.width = "0";
+        });
+    </script>
+
+    <!-- Cards animations -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 3000,
+      });
+      document
+        .querySelectorAll("img")
+        .forEach((img) => img.addEventListener("load", () => AOS.refresh()));
+    </script>
+  </body>
+</html>

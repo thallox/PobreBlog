@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog-title - PobreBlog</title>
+  <!-- Css -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- sidebar -->
+    <div class="sidebar">
+      <span class="closeButton">&times;</span>
+      <p class="brand-title"><a href="">PobreBlog</a></p>
+
+      <div class="side-links">
+        <ul>
+          <li><a href="index.html">Pagina Inicial</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="about.html">Sobre</a></li>
+        </ul>
+      </div>
+      <!-- sidebar footer -->
+      <footer class="sidebar-footer">
+        <div>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <small>PobreBlog 100% pirata</small>
+      </footer>
+    </div>
+
+    <!-- Menu Button -->
+    <div class="menuButton">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!-- main -->
+    <main class="container">
+      <section class="single-blog-post">
+        <h1>Porque deve-se preservar a sua Privacidade</h1>
+
+        <p class="time-and-author">
+          12/06/2022
+          <span>Escrito pelo pobre Wezer</span>
+        </p>
+
+        <div class="single-blog-post-ContentImage" data-aos="fade-left">
+          <img src="images/privacidade.jpeg" alt="" />
+        </div>
+
+        <div class="about-text">
+          <p>
+            Privacidade, todos nós conhecemos aquela pessoa em que pública tudo de sua vida. 
+            Horas que foi dormir, na hora que acordou, seus gostos, seu hobby, 
+            quando briga com o namorado e motivos da briga. E a pergunta que fica é se realmente isso é bom ? 
+            Pensando em um lado ético, isso não é bom expor sua vida de mais na internet atraem pessoas de todo tipo, 
+            principalmente pessoas mal intencionadas e você virá chacota, grupos de amigos, conversas entre amigos e até 
+            desconhecidos "alaaaa a mina que brigou com o namorado pq ele bebeu mais guaraná que ela, menina bocó", sua vida exposta 
+            atraem até ladrões, manipuladores e etc...que analisa sua rotinas e seu jeito, usando tudo que você posta contra você mesmo, 
+            hora que você sai do serviço e chega, se está ou não em casa, etc... E principalmente que bosta né ! 
+            Ninguém tá nem ae se você brigou ou não com seu namorado.
+          <br><br>
+            Rede social calada, não atraem mosquitos. Tenham mais privacidade, sua vida é só sua e ninguém tem que saber 
+            sobre sua vida pessoal. Aproveita e tenha uma ótima privacidade na vida sem problemas e fofocas alheiras por 
+            causa de si mesmo com bocozice na internet.
+          </p>
+        </div>
+      </section>
+
+      <section class="recommended">
+        <p>Recentes</p>
+        <div class="recommended-cards">
+          <a href="segurança.html">
+            <div class="recommended-card">
+              <img src="images/segurança.jpg" alt="" loading="lazy" />
+              <h4>
+                Segurança da Informação
+              </h4>
+            </div>
+          </a>
+          <a href="privacidade.html">
+            <div class="recommended-card">
+              <img src="images/privacidade.png" alt="" loading="lazy" />
+              <h4>
+                Porque deve-se preservar a sua Privacidade
+              </h4>
+            </div>
+          </a>
+          <a href="software.html">
+            <div class="recommended-card">
+              <img src="images/software.png" alt="" loading="lazy" />
+              <h4>
+                Oque são propriedades de um software
+              </h4>
+            </div>
+          </a>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Main footer -->
+    <footer class="main-footer">
+      <div>
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+      </div>
+      <small>PobreBlog 100% pirateado</small>
+    </footer>
+  </div>
+
+  <!-- Click events to menu and close buttons using javaascript-->
+  <script>
+    document
+      .querySelector(".menuButton")
+      .addEventListener("click", function () {
+        document.querySelector(".sidebar").style.width = "100%";
+        document.querySelector(".sidebar").style.zIndex = "5";
+      });
+
+    document
+      .querySelector(".closeButton")
+      .addEventListener("click", function () {
+        document.querySelector(".sidebar").style.width = "0";
+      });
+  </script>
+</body>
+
+</html>
